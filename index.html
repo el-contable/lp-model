@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LP Modelling</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Buy Pressure Calculator</h1>
+
+    <!-- Input for LP Pair Price -->
+    <label for="lpPrice">Set LP Pair Price ($):</label>
+    <input type="number" id="lpPrice" value="610" step="10">
+
+    <!-- LP Pair Price Slider -->
+    <input type="range" id="priceSlider" min="0" max="8000" value="610" step="10">
+    <br><br><br>
+
+    <!-- Input for Initial LP Pair Token Balance -->
+    <label for="initialLpBalance">Initial LP Pair Token Balance:</label>
+    <input type="number" id="initialLpBalance" value="116.68" step="10">
+
+    <!-- Input for Initial token Token Balance -->
+    <label for="initialTokenBalance">Initial $SLING Token Balance:</label>
+    <input type="number" id="initialTokenBalance" value="23930000" step="10000">
+    <br><br><br>
+
+    <!-- Input for Buy Pressure -->
+    <label for="buyPressure">Set Buy Pressure ($):</label>
+    <input type="number" id="buyPressure" value="100000" step="10000">
+
+    <div class="slider-section">
+      <input type="range" id="pressureSlider" min="10000" max="500000" value="100000" step="10000">
+    </div>
+    <br>
+    <div class="result">
+      <h2>Token Price: $<span id="tokenPrice">0.00</span></h2>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
